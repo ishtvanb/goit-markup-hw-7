@@ -1,0 +1,73 @@
+.body {
+  font-family: "roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header-link {
+  line-height: 1.14;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.accent {
+  color: #212121;
+}
+
+/* Site-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.site-nav.list {
+  position: relative;
+  margin-left: 93px;
+  padding-left: 0;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=main.css.map */
