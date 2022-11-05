@@ -120,15 +120,15 @@ address {
   padding-left: 0;
 }
 
-.site-nav .item {
+.site-nav__item {
   margin-right: 50px;
 }
 
-.site-nav .item:last-child {
+.site-nav__item:last-child {
   margin-right: 0;
 }
 
-.site-nav .link {
+.site-nav__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -154,15 +154,15 @@ address {
   margin-left: auto;
 }
 
-.site-connect .item {
+.site-connect__item {
   margin-right: 50px;
 }
 
-.site-connect .item:last-child {
+.site-connect__item:last-child {
   margin-right: 0px;
 }
 
-.site-connect .link {
+.site-connect__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -173,17 +173,17 @@ address {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.site-nav .link.current {
+.site-nav__link.current {
   color: var(--accent-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-connect .link:hover,
-.site-connect .link:focus {
+.site-connect__link:hover,
+.site-connect__link:focus {
   color: var(--accent-color);
 }
 
@@ -271,7 +271,93 @@ address {
   background-color: var(--background-color-active);
 }
 
-/* Section */
+/* Sections */
+
+.section-primary-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.section-secondary-title {
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+/* Section-features */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.section-features-list__item {
+  display: block;
+  min-width: 270px;
+}
+
+.section-features__txt {
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+.features-item {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background: var(--secondary-background-color);
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+/* Section-description */
+
+.section-description {
+  padding-bottom: 94px;
+}
+
+.description .list-item {
+  width: 370px;
+}
 
 .item-thumb {
   position: relative;
@@ -299,94 +385,12 @@ address {
   transform: translate(-50%, -50%);
 }
 
-.features-item {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-  border-radius: 4px;
-  background: var(--secondary-background-color);
-}
-
-.features-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.section-features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-description {
-  padding-bottom: 94px;
-}
+/* Section-team */
 
 .section-team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.section-primary-title {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.section-secondary-title {
-  text-align: start;
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.section-list .item {
-  display: block;
-  min-width: 270px;
-}
-
-.section-list {
-  display: flex;
-  gap: 30px;
-}
-
-.section-txt {
-  text-align: start;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--secondary-text-color);
-}
-
-.description .list-item {
-  width: 370px;
-}
-
-/* Team */
 
 .team-list {
   gap: 30px;
