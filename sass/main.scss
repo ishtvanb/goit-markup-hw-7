@@ -790,6 +790,8 @@ $transition: color 250ms var(--transition-timing-function);
 }
 }
 
+/* Footer-socialnet */
+
 $display: flex;
 $gap: 10px;
 $justify-items: center;
@@ -811,12 +813,10 @@ $border-radius: 50%;
 $fill: #ffffff;
 $color: #ffffff;
 $accent-background-color: #2196f3;
-$background-color:  rgba(255, 255, 255, 0.1);
+$background-color: rgba(255, 255, 255, 0.1);
 $prime-transition: background-color 250ms var(--transition-timing-function);
 $sec-transition: fill,
-background-color 250ms var(--transition-timing-function);
-
-/* Footer-socialnet */
+    background-color 250ms var(--transition-timing-function);
 
 .footer-socialnet {
     display: $display;
@@ -875,30 +875,57 @@ background-color 250ms var(--transition-timing-function);
 
 /* Modal */
 
-$position: fixed;
-$top: 0;
-$left: 0;
-$width: 100%;
-$height: 100%;
+$prime-position: fixed;
+$sec-position: absolute;
+$text-align: center;
+$padding: 40px;
+$margin: 0 0 12px;
+$btn-margin-top: 8px;
+$btn-margin-right: 8px;
+$prime-top: 0;
+$prime-left: 0;
+$sec-top: 50%;
+$sec-left: 50%;
+$prime-width: 100%;
+$prime-height: 100%;
+$sec-width: 528px;
+$sec-height: 581px;
+$btn-width: 30px;
+$btn-height: 30px;
 $zero-opacity: 0;
 $visibility: hidden;
 $pointer-events: none;
 $opacity: 1;
-$background-color: rgba(0, 0, 0, 0.2);
-$transition: opacity 250ms var(--transition-timing-function),
+$prime-transition: opacity 250ms var(--transition-timing-function),
 visibility 250ms var(--transition-timing-function);
-$transform: translate(-50%, -50%) scale(1.3) rotate(360deg);
+$prime-transform: translate(-50%, -50%) scale(1.3) rotate(360deg);
+$sec-transform: translate(-50%, -50%) scale(1) rotate(0);
+$border: 1px solid rgba(0, 0, 0, 0.1);
+$prime-border-radius: 4px;
+$sec-border-radius: 50%;
+$transform: translate(-50%, -50%);
+$sec-transition: transform 250ms var(--transition-timing-function);
+$font-weight: 700;
+$font-size: 20px;
+$line-height: 1.15;
+$letter-spacing: 0.03em;
+$color: #212121;
+$fill: #2196f3;
+$prime-background-color: rgba(0, 0, 0, 0.2);
+$sec-background-color: rgba(255, 255, 255, 1);
+$btn-background-color: #ffffff;
+$btn-transition: fill 250ms var(--transition-timing-function);
 
 .backdrop {
-    position: $position;
-    top: $top;
-    left: $left;
-    width: $width;
-    height: $height;
-    background-color: $background-color;
+    position: $prime-position;
+    top: $prime-top;
+    left: $prime-left;
+    width: $prime-width;
+    height: $prime-height;
+    background-color: $prime-background-color;
     opacity: $opacity;
-    transition: $transition;
-
+    transition: $prime-transition;
+    
 &.is-hidden {
     opacity: $zero-opacity;
     visibility: $visibility;
@@ -906,9 +933,67 @@ $transform: translate(-50%, -50%) scale(1.3) rotate(360deg);
 }
 
 &.is-hidden__modal {
+    transform: $prime-transform;
+}
+}
+
+.modal {
+    position: $sec-position;
+    text-align: $text-align;
+    padding: $padding;
+    top: $sec-top;
+    left: $sec-left;
+    transform: $sec-transform;
+    width: $sec-width;
+    height: $sec-height;
+    border-radius: $prime-border-radius;
+    background-color: $sec-background-color;
+    transition: $sec-transition;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+
+    &-title {
+    margin: $margin;
+    }
+}
+
+.close-button {
+    position: $sec-position;
+    top: $prime-top;
+    right: $prime-right;
+    border: $border;
+    border-radius: $sec-border-radius;
+    width: $btn-width;
+    height: $btn-height;
+    margin-top: $btn-margin-top;
+    margin-right: $btn-margin-right;
+    background-color: $btn-background-color;
+    transition: $btn-transition;
+
+    &-icon {
+    position: $sec-position;
     transform: $transform;
+    }
+
+    &-button:hover,
+    &-button:focus {
+    fill: $fill;
+    }
 }
+
+/* Form */
+
+.form {
+    display: block;
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
 }
-
-
-

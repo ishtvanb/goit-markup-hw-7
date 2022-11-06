@@ -722,6 +722,8 @@ address {
   fill: var(--accent-color);
 }
 
+/* Form */
+
 .form {
   display: block;
   width: 570px;
