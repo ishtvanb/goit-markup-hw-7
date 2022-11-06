@@ -988,6 +988,7 @@ $btn-transition: fill 250ms var(--transition-timing-function);
 
 $prime-display: block;
 $sec-display: flex;
+$btn-display: inline-block;
 $align-items: center;
 $text-align: center;
 $prime-width: 570px;
@@ -996,8 +997,11 @@ $sec-width: 358px;
 $sec-height: 50px;
 $btn-width: 200px;
 $btn-height: 50px;
+$icon-width: 24px;
+$icon-height: 24px;
 $margin-left: 93px;
 $margin-right: 12px;
+$btn-margin-left: 10px;
 $padding-left: 16px;
 $btn-padding-left: 28px;
 $border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1013,10 +1017,13 @@ $btn-line-height: 1.18;
 $letter-spacing: 0.03em;
 $btn-letter-spacing: 0.06em;
 $text-transform: uppercase;
+$content: "";
 $prime-color: #ffffff;
 $sec-color: rgba(255, 255, 255, 0.6);
 $background-color:  #2f303a;
 $accent-background-color: #2196f3;
+$background-image: url(../images/icon-send.svg);
+$background-size: contain;
 
 .form {
     display: $prime-display;
@@ -1043,6 +1050,7 @@ $accent-background-color: #2196f3;
     letter-spacing: $letter-spacing;
     color: $sec-color;
     background-color: $background-color;
+   
 }
 
 .button-submit {
@@ -1060,5 +1068,17 @@ $accent-background-color: #2196f3;
     letter-spacing: $btn-letter-spacing;
     color: $prime-color;
     background-color: $accent-background-color;
+
+    .button-submit::after {
+    content: $content;
+    width: $icon-width;
+    height: $icon-height;
+    display: $btn-display;
+    margin-left: $btn-margin-left;
+    background-image: $background-image;
+    background-size: $background-size;
+    fill: $fill;
+    }
 }
 
+/* Form-modal */
