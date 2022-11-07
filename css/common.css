@@ -12,6 +12,8 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Html, Body */
+
 html {
   box-sizing: border-box;
 }
@@ -84,6 +86,8 @@ address {
 .link {
   text-decoration: none;
 }
+
+/* Logo */
 
 .logo {
   font-family: "raleway", sans-serif;
