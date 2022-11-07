@@ -1,0 +1,21 @@
+/* Link.current */
+
+$content: "";
+$position: absolute;
+$bottom: -1px;
+$display: block;
+$width: 100%;
+$height: 4px;
+$border-radius: 2px;
+$background: #2196f3;
+
+.link.current::after {
+    content: $content;
+    position: $position;
+    bottom: $bottom;
+    display: $display;
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    background: $background;
+}

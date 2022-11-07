@@ -1,0 +1,90 @@
+/* Footer */
+
+$primary-display: flex;
+$secondary-display: block;
+$align-items: baseline;
+$flex-direction: column;
+$gap: 9px;
+$width: 206px;
+$height: 80px;
+$padding-top: 60px;
+$padding-bottom: 60px;
+$prime-margin-top: 20px;
+$sec-margin-top: 0;
+$margin-bottom: 9px;
+$margin-left: 70px;
+$font-style: normal;
+$prime-font-weight: 400;
+$sec-font-weight: 700;
+$font-size: 14px;
+$line-height: 1.14;
+$letter-spacing: 0.03em;
+$text-transform: uppercase;
+$text-align: start;
+$line-height: 1.71;
+$letter-spacing: 0.03em;
+$prime-color: rgba(255, 255, 255, 0.6);
+$sec-color: #ffffff;
+$accent-color: #2196f3;
+$background-color: #2f303a;
+$transition: color 250ms var(--transition-timing-function);
+
+.footer {
+    display: $primary-display;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    background-color: $background-color;
+
+    &-wrap {
+        display: $primary-display;
+        align-items: $align-items;
+    }
+
+    &-list.list {
+        display: $primary-display;
+        flex-direction: $flex-direction;
+        gap: $gap;
+    }
+
+    &-list__link {
+        margin-bottom: $margin-bottom;
+        font-style: $font-style;
+        font-weight: $prime-font-weight;
+        font-size: $font-size;
+        line-height: $line-height;
+        letter-spacing: $letter-spacing;
+        color: $prime-color;
+        transition: $transition;
+    }
+
+    &-list__map-link {
+        color: $sec-color;
+    }
+
+    &-list__link:hover,
+    &-list__link:focus {
+        color: $accent-color;
+    }
+
+    .address {
+        margin-top: $prime-margin-top;
+    }
+
+    &-link {
+        display: $secondary-display;
+        margin-left: $margin-left;
+        text-align: $text-align;
+        width: $width;
+        height: $height;
+    }
+
+    &-title {
+        margin-top: $sec-margin-top;
+        font-weight: $sec-font-weight;
+        font-size: $font-size;
+        line-height: $line-height;
+        letter-spacing: $letter-spacing;
+        text-transform: $text-transform;
+        color: $sec-color;
+    }
+}

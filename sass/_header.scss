@@ -1,0 +1,36 @@
+/* Header */
+
+$display: flex;
+$header-border-bottom: 1px solid #ececec;
+$padding: 0 15px;
+$margin: 0 auto;
+$max-width: 1200px;
+$line-height: 1.14;
+$list-style: none;
+$text-decoration: none;
+
+.header {
+    border-bottom: $header-border-bottom;
+}
+
+.header-container {
+    display: $display;
+}
+
+.container {
+    padding: $padding;
+    margin: $margin;
+    width: $max-width;
+}
+
+.header-link {
+    line-height: $line-height;
+}
+
+.list {
+    list-style: $list-style;
+}
+
+.link {
+    text-decoration: $text-decoration;
+}

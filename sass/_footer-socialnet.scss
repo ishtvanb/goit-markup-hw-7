@@ -1,0 +1,82 @@
+/* Footer-socialnet */
+
+$display: flex;
+$gap: 10px;
+$justify-items: center;
+$align-items: center;
+$prime-justify-content: space-evenly;
+$sec-justify-content: center;
+$margin-left: 0;
+$margin-right: 0;
+$margin-top: 20px;
+$main-width: 100%;
+$main-height: 100%;
+$prime-width: 206px;
+$prime-height: 44px;
+$sec-width: 44px;
+$sec-height: 44px;
+$icon-width: 20px;
+$icon-height: 20px;
+$border-radius: 50%;
+$fill: #ffffff;
+$color: #ffffff;
+$accent-background-color: #2196f3;
+$background-color: rgba(255, 255, 255, 0.1);
+$prime-transition: background-color 250ms var(--transition-timing-function);
+$sec-transition: fill,
+    background-color 250ms var(--transition-timing-function);
+
+.footer-socialnet {
+    display: $display;
+    width: $prime-width;
+    height: $prime-height;
+    justify-content: $prime-justify-content;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+    margin-top: $margin-top;
+}
+
+.socialnet-list {
+    display: $display;
+    gap: $gap;
+    justify-items: $justify-items;
+
+    &-item {
+        width: $sec-width;
+        height: $sec-height;
+        border-radius: $border-radius;
+        background-color: $background-color;
+    }
+
+    &-link {
+        width: $main-width;
+        height: $main-height;
+        display: $display;
+        align-items: $align-items;
+        justify-content: $sec-justify-content;
+        border-radius: $border-radius;
+        transition: $prime-transition;
+    }
+
+    &-link:hover,
+    &-link:focus {
+        background-color: $accent-background-color;
+    }
+
+    &-link:hover .footer-team-icon,
+    &-link:focus .footer-team-icon {
+        background-color: $accent-background-color;
+        fill: $fill;
+    }
+}
+
+.footer-team-icon {
+    width: $icon-width;
+    height: $icon-height;
+    fill: $fill;
+    transition: $sec-transition;
+}
+
+.footer__accent {
+    color: $color;
+}

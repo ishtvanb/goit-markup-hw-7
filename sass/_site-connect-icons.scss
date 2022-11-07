@@ -1,0 +1,25 @@
+/* Site-connect-icons */
+
+$vertical-align: middle;
+$margin-right: 10px;
+$transition: fill 250ms var(--transition-timing-function);
+$fill: #2196f3;
+$current-fill: currentColor;
+
+.item .mailto-icon,
+.item .tell-icon {
+    vertical-align: $vertical-align;
+    margin-right: $margin-right;
+    fill: $current-fill;
+    transition: $transition;
+}
+
+.mailto-icon:hover,
+.mailto-icon:focus {
+    fill: $fill;
+}
+
+.tell-icon:hover,
+.tell-icon:focus {
+    fill: $fill;
+}

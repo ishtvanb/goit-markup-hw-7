@@ -1,0 +1,81 @@
+/* Clients */
+
+$display: flex;
+$align-items: center;
+$justify-content: center;
+$margin-top: 50px;
+$padding-top: 94px;
+$padding-bottom: 94px;
+$prime-width: 170px;
+$prime-height: 92px;
+$sec-width: 100%;
+$sec-height: 100%;
+$icon-width: 106px;
+$icon-height: 60px;
+$prime-margin-right: 30px;
+$sec-margin-right: 0;
+$border-radius: 4px;
+$border: 1px solid var(--current-color);
+$accent-border: 1px solid var(--accent-color);
+$font-size: 24px;
+$line-height: 1.17;
+$text-align: center;
+$prime-fill: #2196f3;
+$sec-fill: #afb1b8;
+$color: #212121;
+$background-color: #ffffff;
+$secondary-transition: fill 250ms var(--transition-timing-function);
+$primary-transition: border 250ms var(--transition-timing-function);
+
+.section-clients {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-align: $text-align;
+    color: $color;
+
+    &-logo {
+        display: $display;
+        margin-top: $margin-top;
+    }
+
+    &-item {
+        width: $prime-width;
+        height: $prime-height;
+        margin-right: $prime-margin-right;
+    }
+
+    &-link {
+        width: $sec-width;
+        height: $sec-height;
+        display: $display;
+        align-items: $align-items;
+        justify-content: $justify-content;
+        border-radius: $border-radius;
+        border: $border;
+        background-color: $background-color;
+        transition: $primary-transition;
+    }
+
+    &-link:hover,
+    &-link:focus {
+        border: $accent-border;
+    }
+
+    &-link:hover &-icon,
+    &-link:focus &-icon {
+        fill: $prime-fill;
+    }
+
+    &-item:last-child {
+        margin-right: $sec-margin-right;
+    }
+
+    &-icon {
+        width: $icon-width;
+        height: $icon-height;
+        fill: $sec-fill;
+        transition: $secondary-transition;
+    }
+}

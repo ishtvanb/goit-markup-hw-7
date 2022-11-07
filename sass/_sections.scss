@@ -1,0 +1,36 @@
+/* Sections */
+
+$prim-text-align: center;
+$sec-text-align: start;
+$margin-top: 0;
+$prim-margin-bottom: 50px;
+$sec-margin-bottom: 10px;
+$font-weight: 700;
+$prim-font-size: 36px;
+$sec-font-size: 14px;
+$line-height: 1.17;
+$letter-spacing: 0.03em;
+$text-transform: uppercase;
+$color: #212121;
+
+.section-primary-title {
+    text-align: $prim-text-align;
+    margin-top: $margin-top;
+    margin-bottom: $prim-margin-bottom;
+    font-weight: $font-weight;
+    font-size: $prim-font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+.section-secondary-title {
+    text-align: $sec-text-align;
+    margin-top: $margin-top;
+    margin-bottom: $sec-margin-bottom;
+    font-weight: $font-weight;
+    font-size: $sec-font-size;
+    line-height: $line-height;
+    text-transform: $text-transform;
+    color: $color;
+}

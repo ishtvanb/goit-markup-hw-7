@@ -1,0 +1,22 @@
+/* Hero */
+
+$max-width: 1600px;
+$height: 600px;
+$margin: 0 auto;
+$text-align: center;
+$padding: 200px 0;
+$background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/hero/img-001.jpg);
+$background-color: #2f303a;
+
+.hero {
+    max-width: $max-width;
+    height: $height;
+    margin: $margin;
+    text-align: $text-align;
+    padding: $padding;
+    background-image: $background-image;
+    background-color: $background-color;
+}

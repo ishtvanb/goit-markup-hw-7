@@ -1,0 +1,181 @@
+/* Form-modal */
+
+$primary-display: flex;
+$secondary-display: block;
+$primary-position: relative;
+$secondary-position: absolute;
+$top: 50%;
+$icon-top: 12%;
+$icon-left: 2%;
+$align-items: center;
+$text-align: start;
+$padding-left: 40px;
+$padding: 12px 16px;
+$sec-padding: 10px 52px;
+$prime-margin-top: 4px;
+$sec-margin-top: 30px;
+$agre-margin-top: 20px;
+$margin-bottom: 10px;
+$comm-margin-bottom: 20px;
+$margin-left: 12px;
+$agre-margin-left: 3px;
+$flex-direction: column;
+$agre-border: 1px solid rgba(33, 33, 33, 1);
+$border: 1px solid rgba(33, 33, 33, 0.2);
+$accent-border: 1px solid var(--accent-color);
+$outline: none;
+$border: none;
+$border-radius: 4px;
+$agre-border-radius: 2px;
+$comm-height: 120px;
+$prime-width: 448px;
+$prime-height: 342px;
+$sec-height: 40px;
+$height: 50px;
+$icon-width: 18px;
+$check-width: 16px;
+$check-height: 15px;
+$icon-height: 18px;
+$prime-font-weight: 400;
+$sec-font-weight: 700;
+$prime-font-size: 12px;
+$prime-line-height: 1.17;
+$sec-line-height: 1.7;
+$line-height: 1.18;
+$prime-letter-spacing: 0.01em;
+$letter-spacing: 0.06em;
+$sec-font-size: 14px;
+$font-size: 16px;
+$sec-letter-spacing: 0.03em;
+$resize: none;
+$text-decoration-line: underline;
+$cursor: pointer;
+$fill: #2196f3;
+$prime-color: #757575;
+$sec-color: #ffffff;
+$prime-transition: border 250ms var(--transition-timing-function);
+$sec-transition: fill 250ms var(--transition-timing-function);
+$comm-color: rgba(117, 117, 117, 0.5);
+$accent-color: #2196f3;
+$transition: 250ms var(--transition-timing-function);
+
+.form-field {
+    display: $primary-display;
+}
+
+.form-field input::placeholder {
+    display: $secondary-display;
+}
+
+.feedback {
+    display: $secondary-display;
+    width: $prime-width;
+    height: $prime-height;
+    align-items: $align-items;
+    font-weight: $prime-font-weight;
+    font-size: $prime-font-size;
+    line-height: $prime-line-height;
+    letter-spacing: $prime-letter-spacing;
+    color: $prime-color;
+
+    &-field {
+        position: $primary-position;
+        display: $primary-display;
+        margin-bottom: $margin-bottom;
+        flex-direction: $flex-direction;
+        text-align: $text-align;
+    }
+
+    &-input {
+        height: $sec-height;
+        padding-left: $padding-left;
+        border: $border;
+        border-radius: $border-radius;
+        cursor: $cursor;
+        margin-top: $prime-margin-top;
+        transition: $prime-transition;
+    }
+
+    &-input:focus-within {
+        border: $accent-border;
+        outline: $outline;
+    }
+
+    &-input:focus-within+&-icon {
+        fill: $fill;
+    }
+
+    &-icon {
+        position: $secondary-position;
+        width: $icon-width;
+        height: $icon-height;
+        top: $top;
+        margin-left: $margin-left;
+        transition: $sec-transition;
+    }
+}
+
+.comment-input {
+    padding: $padding;
+    height: $comm-height;
+    margin-bottom: $comm-margin-bottom;
+    margin-top: $prime-margin-top;
+    resize: $resize;
+    border: $border;
+    border-radius: $border-radius;
+    color: $comm-color;
+
+    &:focus-within {
+        border: $accent-border;
+        outline: $outline;
+    }
+}
+
+.agreement-field {
+    position: $primary-position;
+    margin-top: $agre-margin-top;
+    font-weight: $font-weight;
+    font-size: $sec-font-size;
+    line-height: $sec-line-height;
+    letter-spacing: $sec-letter-spacing;
+    color: $prime-color;
+
+    &-term {
+        text-decoration-line: $text-decoration-line;
+        margin-left: $agre-margin-left;
+        color: $accent-color;
+    }
+
+    &-icon {
+        border: $agre-border;
+        border-radius: $agre-border-radius;
+        transition: $transition;
+    }
+}
+
+.checkbox-icon {
+    position: $secondary-position;
+    top: $icon-top;
+    left: $icon-left;
+    width: $check-width;
+    height: $check-height;
+
+    &:checked+.agreement-icon {
+        background-color: $accent-color;
+        border: $border;
+    }
+}
+
+.feedback-button-submit {
+    margin-top: $sec-margin-top;
+    height: $height;
+    padding: $sec-padding;
+    border-radius: $border-radius;
+    border: $border;
+    font-weight: $sec-font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $sec-color;
+    background-color: $accent-color;
+}

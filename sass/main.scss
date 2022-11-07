@@ -1,14 +1,54 @@
-$primary-text-color: #212121;
-$secondary-text-color: #757575;
-$accent-color: #2196f3;
-$white-color: #ffffff;
-$body-background-color: #f5f5f5;
-$secondary-background-color: #f5f4fa;
-$primary-background-color: #2f303a;
-$background-color-active: #188ce8;
-$current-color: #afb1b8;
-$socialnet-background-color: rgba(255, 255, 255, 0.1);
-$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@import './vars';
+@import './html_body';
+@import './header';
+@import './logo';
+@import './site-nav';
+@import './_link.current';
+@import './site-connect';
+@import './site-connect-icons';
+@import './hero';
+@import './hero-title';
+@import './button';
+@import './sections';
+@import './_visually-hidden.csss';
+@import './section-features';
+@import './section-description';
+@import './section-team';
+@import './socialnet';
+@import './clients';
+@import './footer';
+@import './footer-socialnet';
+@import './modal';
+@import './form-footer';
+@import './form-modal';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 :root {
     --primary-text-color: #212121;
