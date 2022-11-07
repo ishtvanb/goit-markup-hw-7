@@ -1086,6 +1086,7 @@ $background-size: contain;
 $primary-display: flex;
 $secondary-display: block;
 $primary-position: relative;
+$secondary-position: absolute;
 $align-items: center;
 $text-align: start;
 $padding-left: 40px;
@@ -1093,17 +1094,27 @@ $margin-top: 4px;
 $margin-bottom: 10px;
 $flex-direction: column;
 $border: 1px solid rgba(33, 33, 33, 0.2);
+$accent-border: 1px solid var(--accent-color);
+$outline: none;
 $border-radius: 4px;
 $prime-width: 448px;
 $prime-height: 342px;
 $sec-height: 40px;
+$icon-width: 18px;
+$icon-height: 18px;
 $prime-font-weight: 400;
 $prime-font-size: 12px;
 $prime-line-height: 14px;
 $letter-spacing: 0.01em;
 $cursor: pointer;
+$fill: #2196f3;
 $color: #757575;
-$transition: border 250ms var(--transition-timing-function);
+$prime-transition: border 250ms var(--transition-timing-function);
+$sec-transition: fill 250ms var(--transition-timing-function);
+
+$top: 50%;
+$margin-left: 12px;
+
 
 .form-field {
     display: $primary-display;
@@ -1123,22 +1134,40 @@ $transition: border 250ms var(--transition-timing-function);
     line-height: $prime-line-height;
     letter-spacing: $letter-spacing;
     color: $color;
-}
 
-.feedback-field {
+    &-field {
     position: $primary-position;
     display: $primary-display;
     margin-bottom: $margin-bottom;
     flex-direction: $flex-direction;
     text-align: $text-align;
-}
+    }
 
-.feedback-input {
+    &-input {
     height: $sec-height;
     padding-left: $padding-left;
     border: $border;
     border-radius: $border-radius;
     cursor: $cursor;
     margin-top: $margin-top;
-    transition: $transition;
+    transition: $prime-transition;
+    }
+
+    &-input:focus-within {
+    border: $accent-border;
+    outline: $outline;
+    }
+
+    &-input:focus-within+ &-icon {
+    fill: $fill;
+    }
+
+    &-icon {
+    position: $secondary-position;
+    width: $icon-width;
+    height: $icon-height;
+    top: 50%;
+    margin-left: 12px;
+    transition: $sec-transition;
+    }
 }
