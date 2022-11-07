@@ -1082,3 +1082,63 @@ $background-size: contain;
 }
 
 /* Form-modal */
+
+$primary-display: flex;
+$secondary-display: block;
+$primary-position: relative;
+$align-items: center;
+$text-align: start;
+$padding-left: 40px;
+$margin-top: 4px;
+$margin-bottom: 10px;
+$flex-direction: column;
+$border: 1px solid rgba(33, 33, 33, 0.2);
+$border-radius: 4px;
+$prime-width: 448px;
+$prime-height: 342px;
+$sec-height: 40px;
+$prime-font-weight: 400;
+$prime-font-size: 12px;
+$prime-line-height: 14px;
+$letter-spacing: 0.01em;
+$cursor: pointer;
+$color: #757575;
+$transition: border 250ms var(--transition-timing-function);
+
+.form-field {
+    display: $primary-display;
+}
+
+.form-field input::placeholder {
+    display: $secondary-display;
+}
+
+.feedback {
+    display: $secondary-display;
+    width: $prime-width;
+    height: $prime-height;
+    align-items: $align-items;
+    font-weight: $prime-font-weight;
+    font-size: $prime-font-size;
+    line-height: $prime-line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+.feedback-field {
+    position: $primary-position;
+    display: $primary-display;
+    margin-bottom: $margin-bottom;
+    flex-direction: $flex-direction;
+    text-align: $text-align;
+}
+
+.feedback-input {
+    height: $sec-height;
+    padding-left: $padding-left;
+    border: $border;
+    border-radius: $border-radius;
+    cursor: $cursor;
+    margin-top: $margin-top;
+    transition: $transition;
+}
