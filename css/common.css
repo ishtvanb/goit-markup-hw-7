@@ -869,18 +869,18 @@ address {
   color: var(--accent-color);
 }
 
+.agreement-icon {
+  border: 1px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  transition: 250ms var(--transition-timing-function);
+}
+
 .checkbox-icon {
   position: absolute;
   top: 12%;
   left: 2%;
   width: 16px;
   height: 15px;
-}
-
-.agreement-icon {
-  border: 1px solid rgba(33, 33, 33, 1);
-  border-radius: 2px;
-  transition: 250ms var(--transition-timing-function);
 }
 
 .checkbox:checked + .agreement-icon {

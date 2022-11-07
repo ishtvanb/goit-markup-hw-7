@@ -1093,14 +1093,18 @@ $text-align: start;
 $padding-left: 40px;
 $padding: 12px 16px;
 $margin-top: 4px;
+$agre-margin-top: 20px;
 $margin-bottom: 10px;
 $comm-margin-bottom: 20px;
 $margin-left: 12px;
+$agre-margin-left: 3px;
 $flex-direction: column;
+$agre-border: 1px solid rgba(33, 33, 33, 1);
 $border: 1px solid rgba(33, 33, 33, 0.2);
 $accent-border: 1px solid var(--accent-color);
 $outline: none;
 $border-radius: 4px;
+$agre-border-radius: 2px;
 $comm-height: 120px;
 $prime-width: 448px;
 $prime-height: 342px;
@@ -1110,14 +1114,20 @@ $icon-height: 18px;
 $prime-font-weight: 400;
 $prime-font-size: 12px;
 $prime-line-height: 14px;
-$letter-spacing: 0.01em;
+$prime-letter-spacing: 0.01em;
+$sec-font-size: 14px;
+$sec-line-height: 24px;
+$sec-letter-spacing: 0.03em;
 $resize: none;
+$text-decoration-line: underline;
 $cursor: pointer;
 $fill: #2196f3;
 $color: #757575;
 $prime-transition: border 250ms var(--transition-timing-function);
 $sec-transition: fill 250ms var(--transition-timing-function);
 $comm-color: rgba(117, 117, 117, 0.5);
+$accent-color: #2196f3;
+$transition: 250ms var(--transition-timing-function);
 
 .form-field {
     display: $primary-display;
@@ -1135,7 +1145,7 @@ $comm-color: rgba(117, 117, 117, 0.5);
     font-weight: $prime-font-weight;
     font-size: $prime-font-size;
     line-height: $prime-line-height;
-    letter-spacing: $letter-spacing;
+    letter-spacing: $prime-letter-spacing;
     color: $color;
 
     &-field {
@@ -1184,10 +1194,33 @@ $comm-color: rgba(117, 117, 117, 0.5);
     border: $border;
     border-radius: $border-radius;
     color: $comm-color;
-}
 
-.comment-input:focus-within {
+    &:focus-within {
     border: $accent-border;
     outline: $outline;
+    }
 }
+
+.agreement-field {
+    position: $primary-position;
+    margin-top: $agre-margin-top;
+    font-weight: $font-weight;
+    font-size: $sec-font-size;
+    line-height: $sec-line-height;
+    letter-spacing: $sec-letter-spacing;
+    color: $color;
+
+    &-term {
+    text-decoration-line: $text-decoration-line;
+    margin-left: $agre-margin-left;
+    color: $accent-color;
+    }
+
+    &-icon {
+    border: $agre-border;
+    border-radius: $agre-border-radius;
+    transition: $transition;
+    }
+}
+
 
