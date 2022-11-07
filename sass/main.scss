@@ -1087,16 +1087,21 @@ $primary-display: flex;
 $secondary-display: block;
 $primary-position: relative;
 $secondary-position: absolute;
+$top: 50%;
 $align-items: center;
 $text-align: start;
 $padding-left: 40px;
+$padding: 12px 16px;
 $margin-top: 4px;
 $margin-bottom: 10px;
+$comm-margin-bottom: 20px;
+$margin-left: 12px;
 $flex-direction: column;
 $border: 1px solid rgba(33, 33, 33, 0.2);
 $accent-border: 1px solid var(--accent-color);
 $outline: none;
 $border-radius: 4px;
+$comm-height: 120px;
 $prime-width: 448px;
 $prime-height: 342px;
 $sec-height: 40px;
@@ -1106,15 +1111,13 @@ $prime-font-weight: 400;
 $prime-font-size: 12px;
 $prime-line-height: 14px;
 $letter-spacing: 0.01em;
+$resize: none;
 $cursor: pointer;
 $fill: #2196f3;
 $color: #757575;
 $prime-transition: border 250ms var(--transition-timing-function);
 $sec-transition: fill 250ms var(--transition-timing-function);
-
-$top: 50%;
-$margin-left: 12px;
-
+$comm-color: rgba(117, 117, 117, 0.5);
 
 .form-field {
     display: $primary-display;
@@ -1166,8 +1169,25 @@ $margin-left: 12px;
     position: $secondary-position;
     width: $icon-width;
     height: $icon-height;
-    top: 50%;
-    margin-left: 12px;
+    top: $top;
+    margin-left: $margin-left;
     transition: $sec-transition;
     }
 }
+
+.comment-input {
+    padding: $padding;
+    height: $comm-height;
+    margin-bottom: $comm-margin-bottom;
+    margin-top: $margin-top;
+    resize: $resize;
+    border: $border;
+    border-radius: $border-radius;
+    color: $comm-color;
+}
+
+.comment-input:focus-within {
+    border: $accent-border;
+    outline: $outline;
+}
+
