@@ -19,7 +19,7 @@ $transition: color 250ms var(--transition-timing-function);
     margin-left: $margin-left;
 
     &__item {
-        margin-right: $margin-right;
+        margin-right: $first-margin-right;
     }
 
     &__item:last-child {

@@ -8,7 +8,8 @@ $margin: 0 0 12px;
 $btn-margin-top: 8px;
 $btn-margin-right: 8px;
 $prime-top: 0;
-$prime-left: 0;
+$prime-right: 0;
+$left: $left;
 $sec-top: 50%;
 $sec-left: 50%;
 $prime-width: 100%;
@@ -44,7 +45,7 @@ $btn-transition: fill 250ms var(--transition-timing-function);
 .backdrop {
     position: $prime-position;
     top: $prime-top;
-    left: $prime-left;
+    left: $left;
     width: $prime-width;
     height: $prime-height;
     background-color: $prime-background-color;
