@@ -1,0 +1,64 @@
+/* Reset */
+
+$main-box-sizing: border-box;
+
+html {
+    box-sizing: $main-box-sizing;
+}
+
+$color: #ffffff;
+$body-font-family: "roboto", sans-serif;
+
+.body {
+    font-family: $body-font-family;
+    background-color: $color;
+}
+
+$box-sizing: inherit;
+
+*,
+*::before,
+*::after {
+    box-sizing: $box-sizing;
+}
+
+$margin: 0;
+$padding-left: 0;
+
+.reset p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: $margin;
+}
+
+ul,
+ol {
+    margin: $margin;
+    padding-left: $padding-left;
+}
+
+$cursor: pointer;
+
+button {
+    cursor: $cursor;
+}
+
+$font-style: normal;
+
+address {
+    font-style: $font-style;
+}
+
+$display: block;
+$max-width: 100%;
+$height: auto;
+
+.img {
+    display: $display;
+    max-width: $max-width;
+    height: $height;
+}
