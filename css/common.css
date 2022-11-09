@@ -58,6 +58,13 @@ address {
   height: auto;
 }
 
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
 /* Header */
 
 .header {
@@ -66,13 +73,6 @@ address {
 
 .header-container {
   display: flex;
-}
-
-.container {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
 }
 
 .header-link {
@@ -115,7 +115,7 @@ address {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .site-nav.list {
@@ -124,15 +124,15 @@ address {
   padding-left: 0;
 }
 
-.site-nav__item {
+.site-nav .item {
   margin-right: 50px;
 }
 
-.site-nav__item:last-child {
+.site-nav .item:last-child {
   margin-right: 0;
 }
 
-.site-nav__link {
+.site-nav .link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -152,21 +152,23 @@ address {
   background: var(--accent-color);
 }
 
+/* Site-connect */
+
 .site-connect.list {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.site-connect__item {
+.site-connect .item {
   margin-right: 50px;
 }
 
-.site-connect__item:last-child {
+.site-connect .item:last-child {
   margin-right: 0px;
 }
 
-.site-connect__link {
+.site-connect .link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -177,17 +179,17 @@ address {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.site-nav__link.current {
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
 
-.site-connect__link:hover,
-.site-connect__link:focus {
+.site-connect .link:hover,
+.site-connect .link:focus {
   color: var(--accent-color);
 }
 
@@ -324,12 +326,12 @@ address {
   gap: 30px;
 }
 
-.section-features-list__item {
+.section-features-list .item {
   display: block;
   min-width: 270px;
 }
 
-.section-features__txt {
+.section-features .txt {
   text-align: start;
   margin-top: 0;
   margin-bottom: 0;
@@ -361,6 +363,11 @@ address {
 
 .description .list-item {
   width: 370px;
+}
+
+.section-list.list {
+  display: flex;
+  gap: 30px;
 }
 
 .item-thumb {
