@@ -331,7 +331,7 @@ address {
   min-width: 270px;
 }
 
-.section-features .txt {
+.section-features-txt {
   text-align: start;
   margin-top: 0;
   margin-bottom: 0;
@@ -563,7 +563,7 @@ address {
   gap: 9px;
 }
 
-.footer-list__link {
+.footer-list .link {
   margin-bottom: 9px;
   font-style: normal;
   font-weight: 400;
@@ -574,12 +574,12 @@ address {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.footer-list__map-link {
+.footer-list .map-link {
   color: var(--white-color);
 }
 
-.footer-list__link:hover,
-.footer-list__link:focus {
+.footer-list .link:hover,
+.footer-list .link:focus {
   color: var(--accent-color);
 }
 
