@@ -468,13 +468,13 @@ address {
   background-color: var(--accent-color);
 }
 
-.socialnet-link:hover .team-icon,
-.socialnet-link:focus .team-icon {
+.socialnet-link:hover .footer-team-icon,
+.socialnet-link:focus .footer-team-icon {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
 
-.team-icon {
+.footer-team-icon {
   width: 20px;
   height: 20px;
   fill: var(--white-color);
