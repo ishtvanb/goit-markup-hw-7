@@ -1,25 +1,14 @@
 /* Visually-hidden */
 
-$position: absolute;
-$white-space: nowrap;
-$width: 1px;
-$height: 1px;
-$overflow: hidden;
-$border: 0;
-$padding: 0;
-$clip: rect(0 0 0 0);
-$clip-path: inset(50%);
-$margin: -1px;
-
 .visually-hidden {
-    position: $position;
-    white-space: $white-space;
-    width: $width;
-    height: $height;
-    overflow: $overflow;
-    border: $border;
-    padding: $padding;
-    clip: $clip;
-    clip-path: $clip-path;
-    margin: $margin;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }

@@ -1,90 +1,61 @@
 /* Footer */
 
-$primary-display: flex;
-$secondary-display: block;
-$align-items: baseline;
-$flex-direction: column;
-$gap: 9px;
-$width: 206px;
-$height: 80px;
-$padding-top: 60px;
-$padding-bottom: 60px;
-$prime-margin-top: 20px;
-$sec-margin-top: 0;
-$margin-bottom: 9px;
-$margin-left: 70px;
-$font-style: normal;
-$prime-font-weight: 400;
-$sec-font-weight: 700;
-$font-size: 14px;
-$line-height: 1.14;
-$letter-spacing: 0.03em;
-$text-transform: uppercase;
-$text-align: start;
-$line-height: 1.71;
-$letter-spacing: 0.03em;
-$prime-color: rgba(255, 255, 255, 0.6);
-$sec-color: #ffffff;
-$accent-color: #2196f3;
-$background-color: #2f303a;
-$transition: color 250ms var(--transition-timing-function);
-
 .footer {
-    display: $primary-display;
-    padding-top: $padding-top;
-    padding-bottom: $padding-bottom;
-    background-color: $background-color;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--primary-background-color);
+}
 
-    &-wrap {
-        display: $primary-display;
-        align-items: $align-items;
-    }
+.footer-wrap {
+    display: flex;
+    align-items: baseline;
+}
 
-    &-list.list {
-        display: $primary-display;
-        flex-direction: $flex-direction;
-        gap: $gap;
-    }
+.footer-list.list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
 
-    &-list__link {
-        margin-bottom: $margin-bottom;
-        font-style: $font-style;
-        font-weight: $prime-font-weight;
-        font-size: $font-size;
-        line-height: $line-height;
-        letter-spacing: $letter-spacing;
-        color: $prime-color;
-        transition: $transition;
-    }
+.footer-list .link {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--transition-timing-function);
+}
 
-    &-list__map-link {
-        color: $sec-color;
-    }
+.footer-list .map-link {
+    color: var(--white-color);
+}
 
-    &-list__link:hover,
-    &-list__link:focus {
-        color: $accent-color;
-    }
+.footer-list .link:hover,
+.footer-list .link:focus {
+    color: var(--accent-color);
+}
 
-    .address {
-        margin-top: $prime-margin-top;
-    }
+.address {
+    margin-top: 20px;
+}
 
-    &-link {
-        display: $secondary-display;
-        margin-left: $margin-left;
-        text-align: $text-align;
-        width: $width;
-        height: $height;
-    }
+.footer-link {
+    display: block;
+    margin-left: 70px;
+    text-align: start;
+    width: 206px;
+    height: 80px;
+}
 
-    &-title {
-        margin-top: $sec-margin-top;
-        font-weight: $sec-font-weight;
-        font-size: $font-size;
-        line-height: $line-height;
-        letter-spacing: $letter-spacing;
-        text-transform: $text-transform;
-        color: $sec-color;
-    }
+.footer-title {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
 }

@@ -1,64 +1,43 @@
 /* Section-team */
 
-$gap: 30px;
-$width: 270px;
-$padding: 94px 0;
-$text-align: center;
-$prime-margin-top: 30px;
-$prime-margin-bottom: 10px;
-$sec-margin-top: 0;
-$sec-margin-bottom: 30px;
-$font-weight: 500;
-$prime-font-size: 14px;
-$prime-line-height: 1.14;
-$sec-font-size: 16px;
-$sec-line-height: 1.19;
-$letter-spacing: 0.03em;
-$box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-$border-radius: 0px 0px 4px 4px;
-$primary-color: #212121;
-$secondary-color: #757575;
-$background: #f5f4fa;
-$background-color: #ffffff;
-
 .section-team {
-    padding: $padding;
-    background-color: $background;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--secondary-background-color);
+}
 
-    &__list {
-        font-size: $prime-font-size;
-        line-height: $prime-line-height;
-        letter-spacing: $letter-spacing;
-        color: $primary-color;
-        background-color: $background;
-    }
+.section-team .list {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
 }
 
 .team-list {
-    gap: $gap;
-    width: $width;
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
-    background-color: $background-color;
+    gap: 30px;
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-color);
 }
 
 .section-member {
-    text-align: $text-align;
-    margin-top: $prime-margin-top;
-    margin-bottom: $prime-margin-bottom;
-    font-weight: $font-weight;
-    font-size: $sec-font-size;
-    line-height: $sec-line-height;
-    color: $primary-color;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
 }
 
 .section-role {
-    text-align: $text-align;
-    margin-top: $sec-margin-top;
-    margin-bottom: $sec-margin-bottom;
-    font-size: $sec-font-size;
-    line-height: $sec-line-height;
-    color: $secondary-color;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondary-text-color);
 }

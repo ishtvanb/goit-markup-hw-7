@@ -12,7 +12,7 @@
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Html, Body */
+/* Reset */
 
 html {
   box-sizing: border-box;
@@ -404,7 +404,7 @@ address {
   background-color: var(--secondary-background-color);
 }
 
-.section-team__list {
+.section-team .list {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -658,7 +658,7 @@ address {
   transition: fill, background-color 250ms var(--transition-timing-function);
 }
 
-.footer__accent {
+.footer .accent {
   color: var(--white-color);
 }
 

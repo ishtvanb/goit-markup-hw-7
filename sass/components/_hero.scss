@@ -1,22 +1,27 @@
 /* Hero */
 
-$max-width: 1600px;
-$height: 600px;
-$margin: 0 auto;
-$text-align: center;
-$padding: 200px 0;
-$background-image: linear-gradient(to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)),
-    url(../images/hero/img-001.jpg);
-$background-color: #2f303a;
-
 .hero {
-    max-width: $max-width;
-    height: $height;
-    margin: $margin;
-    text-align: $text-align;
-    padding: $padding;
-    background-image: $background-image;
-    background-color: $background-color;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero/img-001.jpg);
+    background-color: var(--primary-background-color);
+}
+
+.hero-title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    margin: 0 auto 30px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
 }

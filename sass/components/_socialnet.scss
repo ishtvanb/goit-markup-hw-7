@@ -1,65 +1,47 @@
 /* Socialnet */
 
-$prime-width: 44px;
-$prime-height: 44px;
-$sec-width: 100%;
-$sec-height: 100%;
-$icon-width: 20px;
-$icon-height: 20px;
-$border-radius: 50%;
-$margin-bottom: 35px;
-$gap: 10px;
-$justify-content: center;
-$align-items: center;
-$background-color: #ffffff;
-$accent-background-color: #2196f3;
-$prime-fill: #ffffff;
-$sec-fill: #afb1b8;
-$primary-transition: background-color 250ms var(--transition-timing-function);
-$secondary-transition: fill, background-color 250ms var(--transition-timing-function);
-
 .team-socialnet-list .list {
-    display: $display;
-    margin-bottom: $margin-bottom;
-    gap: $gap;
-    justify-content: $justify-content;
-    background-color: $background-color;
+    display: flex;
+    margin-bottom: 35px;
+    gap: 10px;
+    justify-content: center;
+    background-color: var(--white-color);
+}
 
-    &-item {
-        display: $display;
-        width: $prime-width;
-        height: $prime-height;
-        border-radius: $border-radius;
-        background-color: $background-color;
-        justify-content: $justify-content;
-        align-items: $align-items;
-    }
+.team-socialnet-item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    justify-content: center;
+    align-items: center;
+}
 
-    &-link {
-        width: $sec-width;
-        height: $sec-height;
-        display: $display;
-        align-items: $align-items;
-        justify-content: $justify-content;
-        border-radius: $border-radius;
-        transition: $primary-transition;
-    }
+.team-socialnet-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 250ms var(--transition-timing-function);
+}
 
-    .team-icon {
-        width: $icon-width;
-        height: $icon-height;
-        fill: $sec-fill;
-        transition: $secondary-transition;
-    }
+.team-socialnet-link:hover,
+.team-socialnet-link:focus {
+    background-color: var(--accent-color);
+}
 
-    &-link:hover,
-    &-link:focus {
-        background-color: $accent-background-color;
-    }
+.team-socialnet-link:hover .team-icon,
+.team-socialnet-link:focus .team-icon {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+}
 
-    &-link:hover .team-icon,
-    &-link:focus .team-icon {
-        background-color: $accent-background-color;
-        fill: $prime-fill;
-    }
+.team-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--current-color);
+    transition: fill, background-color 250ms var(--transition-timing-function);
 }

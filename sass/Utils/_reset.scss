@@ -1,29 +1,19 @@
 /* Reset */
 
-$main-box-sizing: border-box;
-
 html {
-    box-sizing: $main-box-sizing;
+    box-sizing: border-box;
 }
-
-$color: #ffffff;
-$body-font-family: "roboto", sans-serif;
-
-.body {
-    font-family: $body-font-family;
-    background-color: $color;
-}
-
-$box-sizing: inherit;
 
 *,
 *::before,
 *::after {
-    box-sizing: $box-sizing;
+    box-sizing: inherit;
 }
 
-$margin: 0;
-$padding-left: 0;
+.body {
+    font-family: "roboto", sans-serif;
+    background-color: var(--white-color);
+}
 
 .reset p,
 h1,
@@ -32,33 +22,32 @@ h3,
 h4,
 h5,
 h6 {
-    margin: $margin;
+    margin: 0;
 }
 
 ul,
 ol {
-    margin: $margin;
-    padding-left: $padding-left;
+    margin: 0;
+    padding-left: 0;
 }
-
-$cursor: pointer;
 
 button {
-    cursor: $cursor;
+    cursor: pointer;
 }
-
-$font-style: normal;
 
 address {
-    font-style: $font-style;
+    font-style: normal;
 }
 
-$display: block;
-$max-width: 100%;
-$height: auto;
-
 .img {
-    display: $display;
-    max-width: $max-width;
-    height: $height;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }

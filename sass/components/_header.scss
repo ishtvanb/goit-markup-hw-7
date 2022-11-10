@@ -1,36 +1,21 @@
 /* Header */
 
-$display: flex;
-$header-border-bottom: 1px solid #ececec;
-$padding: 0 15px;
-$margin: 0 auto;
-$max-width: 1200px;
-$line-height: 1.14;
-$list-style: none;
-$text-decoration: none;
-
 .header {
-    border-bottom: $header-border-bottom;
+    border-bottom: 1px solid #ececec;
 }
 
 .header-container {
-    display: $display;
-}
-
-.container {
-    padding: $padding;
-    margin: $margin;
-    width: $max-width;
+    display: flex;
 }
 
 .header-link {
-    line-height: $line-height;
+    line-height: 1.14;
 }
 
 .list {
-    list-style: $list-style;
+    list-style: none;
 }
 
 .link {
-    text-decoration: $text-decoration;
+    text-decoration: none;
 }

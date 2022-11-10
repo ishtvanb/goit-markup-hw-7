@@ -1,44 +1,49 @@
 /* Site-connect */
 
-$display: flex;
-$align-items: center;
-$margin-left: auto;
-$first-margin-right: 50px;
-$last-margin-right: 0px;
-$font-weight: 500;
-$font-size: 14px;
-$line-height: 1.4;
-$letter-spacing: 0.02em;
-$color: #757575;
-$accent-color: #2196f3;
-$transition: color 250ms var(--transition-timing-function);
-
 .site-connect.list {
-    display: $display;
-    align-items: $align-items;
-    margin-left: $margin-left;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
 
-    &__item {
-        margin-right: $first-margin-right;
-    }
+.site-connect .item {
+    margin-right: 50px;
+}
 
-    &__item:last-child {
-        margin-right: $last-margin-right;
-    }
+.site-connect .item:last-child {
+    margin-right: 0px;
+}
 
-    &__link {
-        display: $display;
-        align-items: $align-items;
-        font-weight: $font-weight;
-        font-size: $font-size;
-        line-height: $line-height;
-        letter-spacing: $letter-spacing;
-        color: $color;
-        transition: $transition;
-    }
+.site-connect .link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    transition: color 250ms var(--transition-timing-function);
+}
 
-    &__link:hover,
-    &__link:focus {
-        color: $accent-color;
-    }
+.site-connect .link:hover,
+.site-connect .link:focus {
+    color: var(--accent-color);
+}
+
+.item .mailto-icon,
+.item .tell-icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: currentColor;
+    transition: fill 250ms var(--transition-timing-function);
+}
+
+.mailto-icon:hover,
+.mailto-icon:focus {
+    fill: var(--accent-color);
+}
+
+.tell-icon:hover,
+.tell-icon:focus {
+    fill: var(--accent-color);
 }
