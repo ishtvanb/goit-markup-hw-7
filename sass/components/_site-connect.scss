@@ -4,17 +4,16 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-}
 
-.site-connect .item {
+    &__item {
     margin-right: 50px;
-}
+    }
 
-.site-connect .item:last-child {
+    &__item:last-child {
     margin-right: 0px;
-}
+    }
 
-.site-connect .link {
+    &__link {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -23,11 +22,12 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms var(--transition-timing-function);
-}
+    }
 
-.site-connect .link:hover,
-.site-connect .link:focus {
+    &__link:hover,
+    &__link:focus {
     color: var(--accent-color);
+    }
 }
 
 .item .mailto-icon,

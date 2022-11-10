@@ -1,14 +1,13 @@
 /* Socialnet */
 
-.team-socialnet-list .list {
+.team-socialnet-list__list {
     display: flex;
     margin-bottom: 35px;
     gap: 10px;
     justify-content: center;
     background-color: var(--white-color);
-}
 
-.team-socialnet-item {
+    &-item {
     display: flex;
     width: 44px;
     height: 44px;
@@ -16,9 +15,9 @@
     background-color: var(--white-color);
     justify-content: center;
     align-items: center;
-}
+    }
 
-.team-socialnet-link {
+    &-link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -26,17 +25,18 @@
     justify-content: center;
     border-radius: 50%;
     transition: background-color 250ms var(--transition-timing-function);
-}
+    }
 
-.team-socialnet-link:hover,
-.team-socialnet-link:focus {
+    &-link:hover,
+    &-link:focus {
     background-color: var(--accent-color);
-}
+    }
 
-.team-socialnet-link:hover .team-icon,
-.team-socialnet-link:focus .team-icon {
+    &-link:hover .team--icon,
+    &-link:focus .team--icon {
     background-color: var(--accent-color);
     fill: var(--white-color);
+    }
 }
 
 .team-icon {

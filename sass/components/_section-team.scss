@@ -4,14 +4,32 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--secondary-background-color);
-}
 
-.section-team .list {
+    &__list {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
+    }
+    &-member {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+    }
+
+    &-role {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondary-text-color);
+    }
 }
 
 .team-list {
@@ -23,21 +41,3 @@
     background-color: var(--white-color);
 }
 
-.section-member {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    color: var(--primary-text-color);
-}
-
-.section-role {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 16px;
-    line-height: 1.19;
-    color: var(--secondary-text-color);
-}

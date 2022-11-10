@@ -3,19 +3,18 @@
 .section-features {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.section-features-list {
+    &-list {
     display: flex;
     gap: 30px;
-}
+    }
 
-.section-features-list .item {
+    &--list .item {
     display: block;
     min-width: 270px;
-}
+    }
 
-.section-features-txt {
+    &-txt {
     text-align: start;
     margin-top: 0;
     margin-bottom: 0;
@@ -23,7 +22,8 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-text-color);
-}
+    }
+} 
 
 .features-item {
     width: 270px;
@@ -32,9 +32,9 @@
     padding: 25px 100px;
     border-radius: 4px;
     background: var(--secondary-background-color);
-}
 
-.features-icon {
+    &-icon {
     width: 70px;
     height: 70px;
+    }
 }
