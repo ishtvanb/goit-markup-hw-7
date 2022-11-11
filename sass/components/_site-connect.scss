@@ -1,19 +1,19 @@
 /* Site-connect */
 
-.site-connect.list {
+.site-connect .list {
     display: flex;
     align-items: center;
     margin-left: auto;
 
-    &__item {
+    & .item {
     margin-right: 50px;
     }
 
-    &__item:last-child {
+    & .item:last-child {
     margin-right: 0px;
     }
 
-    &__link {
+    & .link {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -24,8 +24,8 @@
     transition: color 250ms var(--transition-timing-function);
     }
 
-    &__link:hover,
-    &__link:focus {
+    & .link:hover,
+    & .link:focus {
     color: var(--accent-color);
     }
 }

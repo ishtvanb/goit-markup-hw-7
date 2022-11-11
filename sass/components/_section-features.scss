@@ -4,12 +4,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &-list {
+    &-list .list {
     display: flex;
     gap: 30px;
     }
 
-    &--list .item {
+    &-list__item {
     display: block;
     min-width: 270px;
     }

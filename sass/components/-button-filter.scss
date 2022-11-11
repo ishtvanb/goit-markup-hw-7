@@ -38,11 +38,11 @@
     margin-bottom: 50px;
     }
 
-    &__item {
+    & .item {
     margin-right: 8px;
     }
 
-    &__item:last-child {
+    & .item:last-child {
     margin-right: 0;
     }
 }

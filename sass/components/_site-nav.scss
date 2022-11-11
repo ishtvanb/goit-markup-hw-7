@@ -13,21 +13,21 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 
-    &.list {
+    & .list {
     position: relative;
     margin-left: 93px;
     padding-left: 0;
     }
 
-    &__item {
+    & .item {
     margin-right: 50px;
     }
 
-    &__item:last--child {
+    & .item:last-child {
     margin-right: 0;
     }
 
-    &__link {
+    & .link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -36,8 +36,8 @@
     transition: color 250ms var(--transition-timing-function);
     }
 
-    &__link:hover,
-    &__link:focus {
+    & .link:hover,
+    & .link:focus {
     color: var(--accent-color);
     }
 }
