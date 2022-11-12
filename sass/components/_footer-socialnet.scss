@@ -10,19 +10,19 @@
     margin-top: 20px;
 }
 
-    &-list {
+.socialnet-list .list {
     display: flex;
     gap: 10px;
     justify-items: center;
 
-    &-item {
+    &__item {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: var(--socialnet-background-color);
     }
 
-    &-link {
+    &__link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,19 +32,19 @@
     transition: background-color 250ms var(--transition-timing-function);
     }
 
-    &-link:hover,
-    &-link:focus {
+    &__link:hover,
+    &__link:focus {
     background-color: var(--accent-color);
     }
 
-    &-link:hover .footer-team-icon,
-    &-link:focus .footer-team-icon {
+    &__link:hover .footer-team-icon,
+    &__link:focus .footer-team-icon {
     background-color: var(--accent-color);
     fill: var(--white-color);
     }
 }
 
-.footer-team-icon {
+.team-icon {
     width: 20px;
     height: 20px;
     fill: var(--white-color);

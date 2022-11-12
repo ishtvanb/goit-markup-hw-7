@@ -1,6 +1,6 @@
 /* Link-current */
 
-.link.current::after {
+.link .current::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -11,6 +11,6 @@
     background: var(--accent-color);
 }
 
-.site-nav__link.current {
+.site-nav-list__link.current {
     color: var(--accent-color);
 }

@@ -13,23 +13,23 @@
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
-}
 
-&-primary {
+    &--primary {
     color: var(--white-color);
     background-color: var(--accent-color);
     transition: background-color 250ms var(--transition-timing-function),
         color 250ms var(--transition-timing-function);
-}
+    }
 
-&-secondary {
+    &--secondary {
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
     transition: background-color 250ms var(--transition-timing-function),
         color 250ms var(--transition-timing-function);
-}
+    }
 
-&:hover,
-&:focus {
+    &:hover,
+    &:focus {
     background-color: var(--background-color-active);
+    }
 }
