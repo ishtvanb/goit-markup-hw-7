@@ -5,10 +5,11 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-.section-list {
+.section-list .list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 0;
 }
 .section-title {
   margin-bottom: 4px;
@@ -25,9 +26,6 @@
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-.section-list.list {
-  margin-bottom: 0;
 }
 
 .thumb {
@@ -53,7 +51,7 @@
   width: calc((100% - 60px) / 3);
   transition: box-shadow 250ms var(--transition-timing-function);
 }
-.flex-element:hover__overlay-text {
+.flex-element:hover .overlay-text {
   transform: translateY(0);
 }
 .flex-element:hover, .flex-element:focus {
