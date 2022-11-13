@@ -5,15 +5,15 @@
     padding-bottom: 94px;
     margin-top: 0;
     margin-bottom: 0;
+}
 
-    &-list .list {
+.section-portfolio-list .list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 0;
-    }
-
-    &-title {
+    
+    &__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
@@ -22,7 +22,7 @@
     color: var(--primary-text-color);
     }
     
-    &-list &-txt {
+    &__txt {
     margin: 0;
     font-weight: 400;
     font-size: 16px;
@@ -51,7 +51,7 @@
     transition: transform 250ms var(--transition-timing-function);
 }
 
-.flex-element {
+.section-portfolio-list__item {
     width: calc((100% - 60px) / 3);
     transition: box-shadow 250ms var(--transition-timing-function);
 

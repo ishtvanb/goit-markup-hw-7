@@ -1,19 +1,20 @@
 /* Site-connect */
 
-.site-connect-list .list {
+.site-connect-list.list {
     display: flex;
     align-items: center;
     margin-left: auto;
+}
 
-    &__item {
-    margin-right: 50px;
-    }
-
+.site-connect-list__item {
+    margin-right: 30px;
+    
     &__item:last-child {
     margin-right: 0px;
     }
+}
 
-    &__link {
+.site-connect-list__link.link {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -22,13 +23,13 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms var(--transition-timing-function);
-    }
-
-    &__link:hover,
-    &__link:focus {
-    color: var(--accent-color);
-    }
 }
+
+.site-connect-list__link:hover,
+.site-connect-list__link:focus {
+    color: var(--accent-color);
+}
+
 
 .item .mailto-icon,
 .item .tell-icon {
