@@ -31,15 +31,16 @@
     font-size: 16px;
     line-height: 1.19;
     color: var(--primary-text-color);
+}
 
-    &__role {
+.section-list__role {
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     color: var(--secondary-text-color);
-    }
 }
+
 
 

@@ -43,15 +43,19 @@
     border: 1px solid var(--accent-color);
 }
 
-.logo-list__link:hover .logo-list-clients-icon,
-.logo-list__link:focus .logo-list-clients-icon {
+.clients-icon:hover,
+.clients-icon:focus {
+    fill: var(--accent-color);
+}
+
+.logo-list__link:hover .clients-icon,
+.logo-list__link:focus .clients-icon {
     fill: var(--accent-color);
 }
 
 .logo-list__item:last-child {
     margin-right: 0;
 }
-
 
 .clients-icon {
     width: 106px;
