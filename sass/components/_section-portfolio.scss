@@ -7,22 +7,23 @@
     margin-bottom: 0;
 }
 
-.section-portfolio-list .list {
+.section-portfolio-list.list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 0;
-    
-    &__title {
+}
+
+.section-portfolio-list__title {
     margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
-    }
+}
     
-    &__txt {
+.section-portfolio-list__txt {
     margin: 0;
     font-weight: 400;
     font-size: 16px;
@@ -30,7 +31,7 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     }
-}
+
 
 .thumb {
     position: relative;
