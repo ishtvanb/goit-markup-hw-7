@@ -1,6 +1,10 @@
 /* Link-current */
 
-.link .current::after {
+.link.current {
+    position: relative;
+}
+
+.link.current::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -14,3 +18,4 @@
 .site-nav-list__link.current {
     color: var(--accent-color);
 }
+

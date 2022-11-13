@@ -4,7 +4,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-    &-list .list {
+    &-list.list {
     display: flex;
     gap: 30px;
     }
@@ -32,9 +32,4 @@
     padding: 25px 100px;
     border-radius: 4px;
     background: var(--secondary-background-color);
-
-    &-icon {
-    width: 70px;
-    height: 70px;
-    }
 }

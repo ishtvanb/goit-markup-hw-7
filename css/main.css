@@ -281,7 +281,11 @@ address {
 }
 
 /* Link-current */
-.link .current::after {
+.link.current {
+  position: relative;
+}
+
+.link.current::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -326,8 +330,8 @@ address {
   color: var(--accent-color);
 }
 
-.item .mailto-icon,
-.item .tell-icon {
+.mailto-icon,
+.tell-icon {
   vertical-align: middle;
   margin-right: 10px;
   fill: currentColor;
@@ -439,7 +443,7 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-features-list .list {
+.section-features-list.list {
   display: flex;
   gap: 30px;
 }
@@ -465,17 +469,13 @@ address {
   border-radius: 4px;
   background: var(--secondary-background-color);
 }
-.features-item-icon {
-  width: 70px;
-  height: 70px;
-}
 
 /* Section-description */
 .section-description {
   padding-bottom: 94px;
 }
 
-.section-description-list__item .list {
+.section-description-list.list {
   display: flex;
   gap: 30px;
 }
