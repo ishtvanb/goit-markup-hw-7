@@ -827,11 +827,14 @@ address {
   background-color: var(--white-color);
   transition: fill 250ms var(--transition-timing-function);
 }
-.close-button-icon {
+
+.close-icon {
   position: absolute;
   transform: translate(-50%, -50%);
 }
-.close-button-button:hover, .close-button-button:focus {
+
+.close-button:hover,
+.close-button:focus {
   fill: var(--accent-color);
 }
 
@@ -879,6 +882,7 @@ address {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+
 .button-submit::after {
   content: "";
   width: 24px;
@@ -990,7 +994,8 @@ address {
   margin-left: 3px;
   color: var(--accent-color);
 }
-.agreement-field-icon {
+
+.agreement-icon {
   border: 1px solid rgb(33, 33, 33);
   border-radius: 2px;
   transition: 250ms var(--transition-timing-function);

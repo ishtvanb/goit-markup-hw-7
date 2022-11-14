@@ -42,8 +42,9 @@
     letter-spacing: 0.06em;
     color: var(--white-color);
     background-color: var(--accent-color);
+}
 
-    &::after {
+.button-submit::after {
     content: "";
     width: 24px;
     height: 24px;
@@ -52,5 +53,4 @@
     background-image: url(../images/icon-send.svg);
     background-size: contain;
     fill: var(--white-color);
-    }
 }
