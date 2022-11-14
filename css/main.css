@@ -301,6 +301,11 @@ address {
   color: var(--accent-color);
 }
 
+.site-nav-list .link:hover,
+.site-nav-list .link:focus {
+  color: var(--accent-color);
+}
+
 /* Site-connect */
 .site-connect-list.list {
   display: flex;
