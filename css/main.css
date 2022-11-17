@@ -297,6 +297,10 @@ address {
   background: var(--accent-color);
 }
 
+.link.current {
+  color: var(--primary-text-color);
+}
+
 .site-nav-list__link.current {
   color: var(--accent-color);
 }
@@ -520,6 +524,7 @@ address {
   width: 370px;
   height: 70px;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
@@ -653,7 +658,6 @@ address {
 .logo-list__item {
   width: 170px;
   height: 92px;
-  margin-right: 30px;
 }
 
 .logo-list__link {
@@ -920,7 +924,7 @@ address {
   height: 24px;
   display: inline-block;
   margin-left: 10px;
-  background-image: url(../images/icon-send.svg);
+  background-image: url(../../images/icon-send.svg);
   background-size: contain;
   fill: var(--white-color);
 }

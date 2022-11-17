@@ -16,6 +16,10 @@
     background: var(--accent-color);
 }
 
+.link.current {
+    color: var(--primary-text-color);
+}
+
 .site-nav-list__link.current {
     color: var(--accent-color);
 }
